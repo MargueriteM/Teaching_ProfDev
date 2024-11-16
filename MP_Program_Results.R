@@ -24,7 +24,7 @@ class.dat <- class.dat %>%
 # graph program results
 ggplot(class.dat, aes(factor(Level), Proportion))+
   geom_col()+
-  labs(x="Level")+
+  labs(x="Level", y="Percent of Class")+
   facet_grid(.~Program)+
   theme_bw()+
   theme(text=element_text(size=20))
